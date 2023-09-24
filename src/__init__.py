@@ -23,7 +23,4 @@ def form_view():
 def api():
     array = request.json['array']
     array = ast.literal_eval(array)
-    return {
-        "(x, y) pairs": array,
-        "result": list(calculate_standard_deviation(array))
-    }
+    return list(calculate_standard_deviation(array))
