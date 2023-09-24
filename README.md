@@ -5,6 +5,7 @@
 Follow the steps below to run the app in your local
 
 ```shell
+export FLASK_APP=src
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
