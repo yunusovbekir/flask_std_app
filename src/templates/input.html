@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Input Form</title>
+</head>
+<body>
+    <h2>Enter an Array of (x, y) pairs</h2>
+    <form action="" method="post">
+        <label for="id_array">Enter (x,y) pairs:</label>
+        <input type="text" id="id_array" name="array" value="{{ request.form['array']}}" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
